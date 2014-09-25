@@ -6,7 +6,7 @@ import six
 import socket
 import time
 import websocket
-from itertools import izip
+from six.moves import zip as izip
 
 from .exceptions import SocketIOError, ConnectionError, TimeoutError
 

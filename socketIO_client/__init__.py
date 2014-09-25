@@ -3,7 +3,7 @@ import json
 import requests
 import time
 from collections import namedtuple
-from urlparse import urlparse
+from six.moves.urllib.parse import urlparse
 
 from .exceptions import ConnectionError, TimeoutError, PacketError
 from .transports import _get_response, _negotiate_transport, TRANSPORTS
